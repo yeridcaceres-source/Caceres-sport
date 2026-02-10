@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cáceres Sport | Tienda Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header style="background:#000;color:#fff;padding:20px;text-align:center;">
+  <h1>CÁCERES SPORT</h1>
+  <p>Moda deportiva • Estilo • Calidad</p>
+</header>
+
+<section style="padding:20px;">
+  <h2>🧢 Gorras</h2>
+  <button onclick="addToCart('Gorra deportiva',45000)">Agregar $45.000</button>
+
+  <h2>👕 Ropa</h2>
+  <button onclick="addToCart('Sudadera deportiva',120000)">Agregar $120.000</button>
+
+  <h2>👟 Zapatillas</h2>
+  <button onclick="addToCart('Zapatillas urbanas',210000)">Agregar $210.000</button>
+</section>
+
+<section style="padding:20px;background:#f5f5f5;">
+  <h2>🛒 Carrito</h2>
+  <ul id="cart"></ul>
+  <p>Total: $<span id="total">0</span></p>
+
+  <button onclick="sendWhatsApp()" style="background:#25D366;color:#fff;padding:15px;border:none;">
+    Finalizar pedido por WhatsApp
+  </button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
